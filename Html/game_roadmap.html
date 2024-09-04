@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create PDF with JavaScript</title>
+    <!-- Include jsPDF library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+    <style>
+        /* Inline CSS for styling the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .instructions {
+            margin-bottom: 20px;
+        }
+        .example-image {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .example-image img {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generate PDF Example</h1>
+    <div class="instructions">
+        <p>Click the button below to generate a PDF file that contains a simple roadmap for developing a game.</p>
+    </div>
+
+    <!-- Example Image -->
+    <div class="example-image">
+        <p>This is an example of how an image will be added to the PDF.</p>
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+    </div>
+
+    <!-- Button to trigger PDF generation -->
+    <button onclick="generatePDF()">Generate PDF</button>
+
+    <script>
+        function generatePDF() {
+            const { jsPDF } = window.jspdf; // Access jsPDF from the window object
+            const doc = new jsPDF(); // Create a new PDF document
+
+            // Adding a title to the PDF
+            doc.setFontSize(16); // Set the font size
+            doc.text("Code Quest Development Roadmap", 10, 10); // Add title text
+
+            // Adding content for Phase 1
+            doc.setFontSize(12);
+            doc.text("Phase 1: Conceptualization and Planning", 10, 20);
+            doc.setFontSize(10);
+            doc.text("Week 1-2: Game Concept Finalization", 10, 30);
+            doc.text("- Define the game's core objectives, storyline, and main characters.", 10, 40);
+            doc.text("- Outline the JavaScript concepts to be covered (e.g., variables, loops, functions, objects).", 10, 50);
+            doc.text("- Create a basic game flow and identify key challenges and puzzles for each level.", 10, 60);
+
+            doc.text("Week 3-4: Educational Content Development", 10, 80);
+            doc.text("- Collaborate with educators to design coding challenges that align with learning goals.", 10, 90);
+            doc.text("- Break down JavaScript concepts into manageable lessons that can be integrated into gameplay.", 10, 100);
+            doc.text("- Develop scripts for in-game tutorials and mentor guidance.", 10, 110);
+
+            // Adding an image to the PDF
+            doc.addImage('https://via.placeholder.com/300', 'PNG', 10, 120, 60, 60);
+
+            // Saving the generated PDF with a given filename
+            doc.save("Code_Quest_Development_Roadmap.pdf");
+        }
+    </script>
+</body>
+</html>
