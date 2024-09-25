@@ -1,0 +1,160 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Header Styles */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.travelai-logo {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.chatgpt-text {
+    font-size: 18px;
+}
+
+/* Transparent red circle around the logo */
+.logo-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    width: 120px;  /* Shorten the circle size */
+    height: 120px;
+    border: 3px solid red;
+    border-radius: 50%;
+    background: transparent;  /* Ensures the inside of the circle is clear */
+    pointer-events: none;
+}
+
+/* Main Section */
+.main-content {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.5;
+    color: white;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+/* Red circle for main text */
+.main-content::before {
+    content: '';
+    position: absolute;
+    width: 650px;
+    height: 350px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#suggestions {
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-top: 50px;
+    position: relative;
+} 
+
+#search {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+} */
+
+/* Suggestions list */
+ul#suggestions {
+    list-style: none;
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: none; /* Initially hidden */
+}
+
+ul#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+ul#suggestions li:hover {
+    background-color: #eee;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}

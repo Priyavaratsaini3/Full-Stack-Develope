@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="logo">
+                    <span class="travelai-logo">Travel AI</span>
+                    <span class="chatgpt-text">Your Smart Travel Assistant</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-content">
+                <h1>Get answers. Find inspiration. Be more productive.</h1>
+                <p>Free to use. Easy to try. Just ask and Travel AI can help with trip planning, travel advice, and more.</p>
+                <div class="buttons">
+                    <!-- <button>Start now</button> -->
+                </div>
+            </div>
+            
+
+    
+        <button id="startButton">Start</button>
+        <div id="searchContainer" style="display: none;">
+        <input type="text" id="searchBar" placeholder="Enter your destination...">
+        <button id="searchButton">Search</button>
+        <div id="suggestions"></div>
+        </div>
+
+            <!-- Search bar with suggestion box -->
+            <!-- <div class="search-bar">
+                <input type="text" id="search" placeholder="Search..." onfocus="showSuggestions()" onblur="hideSuggestions()" />
+                <ul id="suggestions" class="hidden">
+                <button class="close-button">X</button>
+                    <li>Travel destinations</li>
+                    <li>Search for destinations</li>
+                    <li>Best travel destinations</li>
+                    <li>Top tips for solo travel</li>
+                    <li>How to save on flights</li>
+                    <li>Best budget-friendly hotels</li>
+                    <li>Travel essentials checklist</li>
+                </ul>
+            </div> -->
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
