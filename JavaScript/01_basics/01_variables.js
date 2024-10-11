@@ -5,8 +5,7 @@ accountCity = "Nakur"
 let accountState;
 
 console.log(accountId);
-
-/*
+/*S
 Prefer not to use var
 because of issue in block scope and functional
 */
@@ -14,4 +13,4 @@ because of issue in block scope and functional
 accountEmail = "vishal34@gamil.com"
 accountPassword = "me"
 accountCity = "saharanpur"
-console.table([accountEmail, accountId, accountPassword, accountCity, accountState])
+console.table([accountEmail, accountId, accountPassword, accountCity, accountState,])
