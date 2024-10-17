@@ -36,6 +36,17 @@ console.log("C", myArr);
 console.log(myn2);
 
 
+const fruits  = [];
+fruits.push("banana", "apple", "peach");
+console.log(fruits.length);
+
+fruits[5] = "mango";
+console.log(fruits[5]);
+console.log(Object.keys(fruits));
+console.log(fruits.length);
+
+
+
 
 
 
