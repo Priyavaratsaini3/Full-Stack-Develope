@@ -42,12 +42,31 @@ console.log(fruits.length);
 
 fruits[5] = "mango";
 console.log(fruits[5]);
+console.log(Object(fruits));
 console.log(Object.keys(fruits));
 console.log(fruits.length);
 
+fruits.length = 10;
+console.log(fruits);
+console.log(Object.keys(fruits));
+console.log(fruits.length);
+console.log(fruits[8]);
 
+fruits.length = 2;
+console.log(fruits);    
+console.log(Object.keys(fruits));
+console.log(fruits.length);
+console.log(fruits[0]);
+console.log(fruits[1]);
 
+const color = ["red", "green", "blue"];
+color[5] = "yellow";
+//color.forEach( (item , index) => {
+   // console.log(`${item}: ${index}`);
+//});
 
-
-
+color.reverse();
+color.forEach( (item , index) => {
+    console.log(`${item}: ${index}`);
+});
 
