@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <img src="user.png" alt="no image" width="100px">
+    <picture>
+        <source media="(min-width: 560px)" srcset="user.png" />
+        <img src="user.png" alt="">
+    </picture>
+
+    <map name="user.png">
+    <area onclick="one()" shape="" coords="" href="" alt="" coords="400,400,400,400" shape="rect">
+    <area onclick="two()" shape="" coords="" href="" alt="" coords="32,68,107,103" shape="rect">
+    </map>
+    <script>
+        function one(){
+            alert("You clicked on one")
+        }
+        
+        function two(){
+            alert("You clicked on two")
+        }
+        
+    </script>
+</body>
+</html>
