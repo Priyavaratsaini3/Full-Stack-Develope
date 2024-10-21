@@ -65,8 +65,50 @@ color[5] = "yellow";
    // console.log(`${item}: ${index}`);
 //});
 
-color.reverse();
-color.forEach( (item , index) => {
-    console.log(`${item}: ${index}`);
-});
+// color.reverse();
+// color.forEach( (item , index) => {
+//     console.log(`${item}: ${index}`);
+// });
 
+const iterator = color.keys();
+for (const key of iterator) {
+    console.log(`${key}: ${color[key]}`);
+}
+const newColor = color.toReversed();
+console.log(newColor);
+
+
+function method(callbackFn, thisArg) {
+    const length = this.length;
+    for(let i = 0; i < length; i++){
+        if (i in this) {
+            const result = callbackFn.call(thisArg, this[i], i, this);
+            console.log(result);
+        }
+    }
+}
+
+const arrayLike = {
+    0: "a",
+    1: "b",
+    length: 2,
+};
+
+console.log(Array.prototype.join.call(arrayLike, "+"));
+
+
+console.log(Array.prototype.flat.call({})); // []
+
+const a = { length: 0.7 };
+Array.prototype.push.call(a);
+console.log(a.length); // 0
+
+function f() {
+    console.log(Array.prototype.join.call(arguments, "+"));
+    
+}
+f('a','b');
+let arr = new Array()
+Array[Symbol.species]
+arr = [1,2 ,3,4 ,5 ]
+console.log(arr);
