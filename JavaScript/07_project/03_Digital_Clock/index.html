@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Local Time</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+        }
+        a{  background-color: #797978;  
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #212121;
+    text-decoration: none;
+    border: 2px solid #212121;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #212121;
+}
+        .center {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #clock {
+            font-size: 40px;
+            background-color: orange;
+            padding: 20px 50px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a herf="/" aria-current="page">Home</a>
+        <a
+          target="_blank"
+          href="https://github.com/Priyavaratsaini3/Full-Stack-Develope.git"
+          >Github repository</a
+        >
+      </nav>
+      <div class="center">
+        <div id="banner"><span>Your local time</span></div>
+        <div id="clock"></div>
+      </div>
+      <script src="clock.js"></script>
+
+</body>
+</html>
