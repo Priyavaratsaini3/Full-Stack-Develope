@@ -1,0 +1,48 @@
+html{
+    margin: 0;
+}
+a{          
+          padding: 10px 30px;
+          border-radius: 8px;
+          color: #212121;
+          text-decoration: none;
+          border: 2px solid #212121;
+          display: inline-block;
+          margin: 10px;
+          box-shadow: 2px 2px 5px #212121;
+}
+
+span{
+    display: block;
+}
+
+.canvas{
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+}
+#grey{
+    background: grey;
+}
+#white{
+    background: white;
+}
+#blue{
+    background: blue;
+}
+#yellow{
+    background: yellow;
+}
+#red{
+    background: red;
+}
+#purple{
+    background: purple;
+}
